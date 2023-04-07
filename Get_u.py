@@ -455,50 +455,6 @@ def oo():
         else:
     	    print(f"{G}( {ID} ) | ERROR ID")
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-def hh():
-    os.system('clear')
-    import requests
-    import telebot
-    import re
-    print (logo)
-    token =input ("ادخل توكن بوت ")
-    bot = telebot.TeleBot('token')
-    proxies = {
-    "http": "http://fnygbuyr:r1ofzqbjw488@188.74.210.21:6100",
-    "https": "http://fnygbuyr:r1ofzqbjw488@188.74.210.21:6100"
-}
-    @bot.message_handler(commands=['start'])
-    def start_command(message):
-        bot.send_message(message.chat.id, 'مرحبا، قم بإرسال الآن ايدي منشور وايدي الضحية بهذا الشكل:\n\n11111:22222\n\nحيث 11111 هو ايديك و 22222 هو ايدي الضحية.\n@N_F_W')
-    @bot.message_handler(func=lambda m: True)
-    def send_request(message):
-        bot.send_message(message.chat.id, "جاري المعالجة ......")
-        ll = message.text
-        if not re.match(r'^\d+:\d+$', ll):
-            bot.send_message(message.chat.id, "يرجى إدخال رسالة صالحة.")
-        return   
-        baqer = ll.split(':')[0]
-        tak = ll.split(':')[1]
-        url = f"https://php-web-server.aaunbidiwidjh.repl.co/?target={tok}&userid={baqer}&submit=%D8%B1%D8%B4%D9%82+"
-    
-        try:
-            response = requests.get(url, proxies=proxies)
-            response_text = response.text
-        
-            if 'DONE : ' in response_text:
-                RR = response_text.split('''class='success'><center><font color='red'><hr>''')[1].split('{"status":"')[0]
-                good = f'تم الرشق  عدد ==>{RR}'
-                bot.send_message(message.chat.id, good)       
-            else:
-                DD = response_text.split('message":"')[1].split('<hr>')[0]
-                bad2 = f'{DD}'
-                bot.send_message(message.chat.id, bad2)
-    
-        except Exception as e:
-            error_msg = f"حدث خطأ أثناء تنفيذ الأمر: {str(e)}"
-            bot.send_message(message.chat.id, error_msg)
-
-    bot.polling(True)
 
 
 def ee():
