@@ -57,52 +57,50 @@ F = '\033[2;32m' #اخضر
 A = '\033[2;34m'#ازرق
 C = '\033[2;35m' #وردي
 B = '\033[2;36m'#سمائي
-Y = '\033[1;34m' #ازرق فاتح
+Y = '\033[1;34m' #ازرق فات
 def yy():
 
    os.system('clear')
 
    print(logo)
 
-   #mm88x#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   import requests
 
-    import requests
+   import os
 
-    import os
-
-    import threading
+   import threading
 
 #mm88x#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-    os.system('clear')
+   os.system('clear')
 
 #mm88x#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-    E = '\033[1;31m'
+   E = '\033[1;31m'
 
-    B = '\033[2;36m'
+   B = '\033[2;36m'
 
-    G = '\033[1;32m'
+   G = '\033[1;32m'
 
-    S = '\033[1;33m'
-
-#mm88x#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-    CHAT_ID = input("Enter Your Telegram ID : ")
-
-    BOT_TOKEN = input("Enter Your Telegram Token : ")
-
-    file =input('FILE IDS : ')
-
-    rfile = open('kll.txt' , 'r')
+   S = '\033[1;33m'
 
 #mm88x#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-    os.system('clear')
+   CHAT_ID = input("Enter Your Telegram ID : ")
+
+   BOT_TOKEN = input("Enter Your Telegram Token : ")
+
+   file =input('FILE IDS : ')
+
+   rfile = open('kll.txt' , 'r')
 
 #mm88x#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-    def send_to_telegram(message):
+   os.system('clear')
+
+#mm88x#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+   def send_to_telegram(message):
 
         url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
 
@@ -114,9 +112,7 @@ def yy():
 
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-    def chr():                  												#xxxx
-
-    	while True:														#xxxx
+   def chr():                  												#xxxx    	while True:														#xxxx
 
 	       uid=rfile.readline().split('\n')[0]						    #xxxx
 
@@ -134,7 +130,7 @@ def yy():
 
 	   	    print(f'{E}[❌] : {E}{uid} {B}| {E}{coin}')
 
-    if __name__ == '__main__':										#xxxx
+   if __name__ == '__main__':										#xxxx
 
         for _ in range(200):											   #xxxx
 
