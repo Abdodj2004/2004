@@ -126,7 +126,7 @@ def yy():
 
 	           send_to_telegram(f'{uid} ==> {coin}\n')
 
-	       elif coin < 3000:
+	       elif coin < 600:
 
 	   	    print(f'{E}[❌] : {E}{uid} {B}| {E}{coin}')
 
